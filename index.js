@@ -1,5 +1,7 @@
 function locate(array, target) {
-  // do work here
+  let flattenArray = [].concat.apply([], array);
+  let flattenMore = [].concat.apply([], flattenArray);
+  return flattenMore.includes(target);
 }
-
 module.exports = locate;
+
